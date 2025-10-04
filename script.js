@@ -1,5 +1,5 @@
 // ضع رابط Google Apps Script هنا
-const scriptURL = "ضع_رابط_الويب_ابلكيشن_من_جوجل_هنا";
+const scriptURL = "https://script.google.com/macros/s/AKfycbxrMnJS91kE3ywYOD1rbh4aiswpJmPwSv_0-o2uc2IbpbTOm5PAyDmg2FcrWBHYWThIgQ/exec";
 
 let cart = [];
 const cartCount = document.getElementById("cart-count");
