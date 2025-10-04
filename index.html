@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الإلكتروني</title>
+  <title>متجر الستانلس ستيل</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -11,13 +11,15 @@
   <!-- رأس الموقع -->
   <header class="header">
     <div class="container">
-      <h1 class="logo">شركتي</h1>
+      <h1 class="logo">Stainless Store</h1>
       <nav>
         <ul class="nav-links">
           <li><a href="#home">الرئيسية</a></li>
-          <li><a href="#services">الخدمات</a></li>
-          <li><a href="#about">من نحن</a></li>
+          <li><a href="#products">المنتجات</a></li>
           <li><a href="#contact">تواصل معنا</a></li>
+          <li class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+          </li>
         </ul>
       </nav>
     </div>
@@ -26,40 +28,56 @@
   <!-- قسم رئيسي -->
   <section id="home" class="hero">
     <div class="container">
-      <h2>أهلاً بك في موقعنا</h2>
-      <p>نقدّم أفضل الحلول الرقمية لتطوير عملك.</p>
-      <a href="#services" class="btn">تعرف أكثر</a>
+      <h2>أفضل منتجات الستانلس ستيل</h2>
+      <p>نوفر لك أجود أنواع الأواني والأدوات المصنوعة من الستانلس ستيل بأسعار تنافسية.</p>
+      <a href="#products" class="btn">تسوق الآن</a>
     </div>
   </section>
 
-  <!-- قسم الخدمات -->
-  <section id="services" class="services container">
-    <h2>خدماتنا</h2>
-    <div class="service-boxes">
-      <div class="box">
-        <h3>تصميم مواقع</h3>
-        <p>بناء مواقع احترافية سريعة ومتجاوبة.</p>
+  <!-- قسم المنتجات -->
+  <section id="products" class="products container">
+    <h2>منتجاتنا</h2>
+    <div class="product-grid">
+      <!-- منتج -->
+      <div class="product">
+        <img src="https://picsum.photos/300/200?random=1" alt="وعاء ستانلس">
+        <h3>وعاء ستانلس ستيل</h3>
+        <p class="price">50 د.ل</p>
+        <button class="btn add-to-cart" data-name="وعاء ستانلس" data-price="50">أضف إلى السلة</button>
       </div>
-      <div class="box">
-        <h3>تطبيقات موبايل</h3>
-        <p>تطبيقات iOS و Android تلبي احتياجاتك.</p>
+
+      <div class="product">
+        <img src="https://picsum.photos/300/200?random=2" alt="مج ستانلس">
+        <h3>مج ستانلس ستيل</h3>
+        <p class="price">25 د.ل</p>
+        <button class="btn add-to-cart" data-name="مج ستانلس" data-price="25">أضف إلى السلة</button>
       </div>
-      <div class="box">
-        <h3>تسويق إلكتروني</h3>
-        <p>خطط تسويقية لإيصال منتجك إلى جمهورك.</p>
+
+      <div class="product">
+        <img src="https://picsum.photos/300/200?random=3" alt="قدر ستانلس">
+        <h3>قدر ستانلس ستيل</h3>
+        <p class="price">120 د.ل</p>
+        <button class="btn add-to-cart" data-name="قدر ستانلس" data-price="120">أضف إلى السلة</button>
+      </div>
+
+      <div class="product">
+        <img src="https://picsum.photos/300/200?random=4" alt="ملاعق ستانلس">
+        <h3>طقم ملاعق ستانلس</h3>
+        <p class="price">40 د.ل</p>
+        <button class="btn add-to-cart" data-name="طقم ملاعق" data-price="40">أضف إلى السلة</button>
       </div>
     </div>
   </section>
 
-  <!-- قسم من نحن -->
-  <section id="about" class="about container">
-    <h2>من نحن</h2>
-    <p>
-      نحن فريق متخصص في الحلول التقنية، هدفنا مساعدتك في الوصول إلى جمهورك بأحدث الأدوات.
-    </p>
+  <!-- سلة المشتريات -->
+  <section id="cart" class="cart container">
+    <h2>سلة المشتريات</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">الإجمالي: 0 د.ل</p>
+    <button id="checkout" class="btn">إتمام الطلب</button>
   </section>
 
-  <!-- قسم التواصل -->
+  <!-- تواصل معنا -->
   <section id="contact" class="contact container">
     <h2>تواصل معنا</h2>
     <form id="contactForm">
@@ -73,7 +91,7 @@
 
   <!-- التذييل -->
   <footer class="footer">
-    <p>© 2025 جميع الحقوق محفوظة | شركتي</p>
+    <p>© 2025 جميع الحقوق محفوظة | Stainless Store</p>
   </footer>
 </body>
 </html>
