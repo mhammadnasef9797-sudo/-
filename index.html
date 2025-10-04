@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقعي الإلكتروني</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- رأس الموقع -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">شركتي</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- قسم رئيسي -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>أهلاً بك في موقعنا</h2>
+      <p>نقدّم أفضل الحلول الرقمية لتطوير عملك.</p>
+      <a href="#services" class="btn">تعرف أكثر</a>
+    </div>
+  </section>
+
+  <!-- قسم الخدمات -->
+  <section id="services" class="services container">
+    <h2>خدماتنا</h2>
+    <div class="service-boxes">
+      <div class="box">
+        <h3>تصميم مواقع</h3>
+        <p>بناء مواقع احترافية سريعة ومتجاوبة.</p>
+      </div>
+      <div class="box">
+        <h3>تطبيقات موبايل</h3>
+        <p>تطبيقات iOS و Android تلبي احتياجاتك.</p>
+      </div>
+      <div class="box">
+        <h3>تسويق إلكتروني</h3>
+        <p>خطط تسويقية لإيصال منتجك إلى جمهورك.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم من نحن -->
+  <section id="about" class="about container">
+    <h2>من نحن</h2>
+    <p>
+      نحن فريق متخصص في الحلول التقنية، هدفنا مساعدتك في الوصول إلى جمهورك بأحدث الأدوات.
+    </p>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section id="contact" class="contact container">
+    <h2>تواصل معنا</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="الاسم" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك" required></textarea>
+      <button type="submit" class="btn">إرسال</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <p>© 2025 جميع الحقوق محفوظة | شركتي</p>
+  </footer>
+</body>
+</html>
